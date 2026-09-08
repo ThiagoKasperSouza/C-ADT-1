@@ -22,6 +22,11 @@ void access_p(Point *p) {
     printf("X:%.2f, Y:%.2f\n",p->x,p->y);
 };
 
+void change_p(Point *p, float x, float y) {
+    p->x = x;
+    p->y = y;
+}
+
 void free_p(Point *p) {
     free(p);
     p = NULL;   
