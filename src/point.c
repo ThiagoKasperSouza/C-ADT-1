@@ -33,8 +33,8 @@ void free_p(Point *p) {
 };
 
 float dist_btw_2_p(Point *p1, Point *p2){
-    float x_squared = pow((p1->x+p2->x),2.0);
-    float y_squared = pow((p1->y+p2->y),2.0);
+    float x_squared = pow((p2->x-p1->x),2.0);
+    float y_squared = pow((p2->y-p1->y),2.0);
     float d = sqrt(x_squared+y_squared);
     return d;
 };
