@@ -13,5 +13,6 @@ int main() {
 
     free_p(p1);
     free_p(p2);
+    system("pause");
     return 0;
 }
